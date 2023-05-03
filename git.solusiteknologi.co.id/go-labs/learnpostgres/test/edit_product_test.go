@@ -5,6 +5,7 @@ import (
 
 	"git.solusiteknologi.co.id/go-labs/gopostgres/dao/productdao"
 	"git.solusiteknologi.co.id/goleaf/goleafcore"
+	"git.solusiteknologi.co.id/goleaf/goleafcore/glconstant"
 	"git.solusiteknologi.co.id/goleaf/goleafcore/glinit"
 	"git.solusiteknologi.co.id/goleaf/goleafcore/gltest"
 	"git.solusiteknologi.co.id/goleaf/goleafcore/glutil"
@@ -26,6 +27,15 @@ func TestEditProduct(t *testing.T) {
 			return err
 		}
 
+		// otomatisasi cek apakah yg diinsert benar
+		assert := gltest.NewAssert(t)
+
+		// productId tidak dapat dipastikan karena selalu beda menggunakan sequence
+		assert.AssertEquals("Sirup Marjan", product.ProductName)
+		assert.AssertEquals(decimal.NewFromInt(45000), product.Price)
+		assert.AssertEquals(glconstant.YES, product.Active)
+		assert.AssertEquals(0, product.Version)
+
 		logrus.Debug("ADDED product : ", goleafcore.NewOrEmpty(product).PrettyString())
 
 		editedProduct, err := productdao.Edit(productdao.InputEdit{
@@ -41,6 +51,11 @@ func TestEditProduct(t *testing.T) {
 		if err != nil {
 			return err
 		}
+
+		assert.AssertEquals(product.ProductId, editedProduct.ProductId)
+		assert.AssertEquals("Sirup Marjan Edited", editedProduct.ProductName)
+		assert.AssertEquals(decimal.NewFromInt(50000), editedProduct.Price)
+		assert.AssertEquals(product.Version + 1, editedProduct.Version)
 
 		logrus.Debug("EDITED product : ", goleafcore.NewOrEmpty(editedProduct).PrettyString())
 

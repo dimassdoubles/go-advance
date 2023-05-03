@@ -154,3 +154,694 @@ time=2023-05-03T14:19:26+07:00 level=debug msg=REMOVEDPRODUCT product : {
 }
 time=2023-05-03T14:19:26+07:00 level=debug msg=Init log successfully setup
 time=2023-05-03T14:19:26+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:23:05+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:23:05+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:23:05+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:23:05+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503142305",
+  "createDatetime": "20230503142305",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503142305",
+  "price": "45000",
+  "productId": 15,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503142305",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:23:05+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:23:05+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503142305","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503142305","price":"50000","productId":15,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:23:05+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503142305",
+  "createDatetime": "20230503142305",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503142305",
+  "price": "50000",
+  "productId": 15,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503142305",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:23:05+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:23:05+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:23:20+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:23:20+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:23:20+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:23:20+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503142320",
+  "createDatetime": "20230503142320",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503142320",
+  "price": "45000",
+  "productId": 16,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503142320",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:23:20+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:23:20+07:00 level=debug msg=QUERY remove product: [args] {"productId":16}
+time=2023-05-03T14:23:20+07:00 level=debug msg=REMOVEDPRODUCT product : {
+  "active": "Y",
+  "activeDatetime": "20230503142320",
+  "createDatetime": "20230503142320",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503142320",
+  "price": "45000",
+  "productId": 16,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503142320",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:23:20+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:23:20+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:32:32+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:32:32+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:32:32+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:32:32+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143232",
+  "createDatetime": "20230503143232",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143232",
+  "price": "45000",
+  "productId": 17,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143232",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:32:32+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:32:32+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503143232","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503143232","price":"50000","productId":17,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:32:32+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143232",
+  "createDatetime": "20230503143232",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143232",
+  "price": "50000",
+  "productId": 17,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503143232",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:32:32+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:32:32+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:32:38+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:32:38+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:32:38+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:32:38+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143238",
+  "createDatetime": "20230503143238",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143238",
+  "price": "45000",
+  "productId": 18,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143238",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:32:38+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:32:38+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:33:03+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:33:03+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:33:03+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:33:03+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143303",
+  "createDatetime": "20230503143303",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143303",
+  "price": "45000",
+  "productId": 19,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143303",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:33:03+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:33:03+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:33:56+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:33:56+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:33:56+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:33:56+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143356",
+  "createDatetime": "20230503143356",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143356",
+  "price": "45000",
+  "productId": 20,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143356",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:33:56+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:33:56+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503143356","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503143356","price":"50000","productId":20,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:33:56+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143356",
+  "createDatetime": "20230503143356",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143356",
+  "price": "50000",
+  "productId": 20,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503143356",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:33:56+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:33:56+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:36:37+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:36:37+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:36:37+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:36:37+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503143637",
+  "createDatetime": "20230503143637",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143637",
+  "price": "45000",
+  "productId": 21,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143637",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:36:37+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:36:37+07:00 level=debug msg=QUERY remove product: [args] {"productId":21}
+time=2023-05-03T14:36:37+07:00 level=debug msg=REMOVEDPRODUCT product : {
+  "active": "Y",
+  "activeDatetime": "20230503143637",
+  "createDatetime": "20230503143637",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503143637",
+  "price": "45000",
+  "productId": 21,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503143637",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:36:37+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:36:37+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:41:58+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:41:58+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:41:58+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:41:58+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144158",
+  "createDatetime": "20230503144158",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144158",
+  "price": "45000",
+  "productId": 22,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144158",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:41:58+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:41:58+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:46:26+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:46:26+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:46:26+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:46:26+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144626",
+  "createDatetime": "20230503144626",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144626",
+  "price": "45000",
+  "productId": 23,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144626",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:46:26+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:46:26+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:46:56+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:46:56+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:46:56+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:46:56+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144656",
+  "createDatetime": "20230503144656",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144656",
+  "price": "45000",
+  "productId": 24,
+  "productName": "Sirup Marjann",
+  "updateDatetime": "20230503144656",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:46:56+07:00 level=debug msg=Rolled back transaction
+time=2023-05-03T14:47:07+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:07+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:47:07+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:47:07+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144707",
+  "createDatetime": "20230503144707",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144707",
+  "price": "45000",
+  "productId": 25,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144707",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:07+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:47:07+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503144707","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503144707","price":"50000","productId":25,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:47:07+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144707",
+  "createDatetime": "20230503144707",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144707",
+  "price": "50000",
+  "productId": 25,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503144707",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:47:07+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:07+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:47:16+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:16+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:47:16+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:47:16+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144716",
+  "createDatetime": "20230503144716",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144716",
+  "price": "45000",
+  "productId": 26,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144716",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:16+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:47:16+07:00 level=debug msg=QUERY remove product: [args] {"productId":26}
+time=2023-05-03T14:47:16+07:00 level=debug msg=REMOVEDPRODUCT product : {
+  "active": "Y",
+  "activeDatetime": "20230503144716",
+  "createDatetime": "20230503144716",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144716",
+  "price": "45000",
+  "productId": 26,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144716",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:16+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:16+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:47:18+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:18+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:47:18+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:47:18+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144718",
+  "createDatetime": "20230503144718",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144718",
+  "price": "45000",
+  "productId": 27,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144718",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:18+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:47:18+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503144718","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503144718","price":"50000","productId":27,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:47:18+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144718",
+  "createDatetime": "20230503144718",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144718",
+  "price": "50000",
+  "productId": 27,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503144718",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:47:18+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:18+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:47:20+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:20+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:47:20+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:47:20+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144720",
+  "createDatetime": "20230503144720",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144720",
+  "price": "45000",
+  "productId": 28,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144720",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:20+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:20+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:47:24+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:24+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:47:24+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:47:24+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144724",
+  "createDatetime": "20230503144724",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144724",
+  "price": "45000",
+  "productId": 29,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503144724",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:47:24+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:47:24+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503144724","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503144724","price":"50000","productId":29,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:47:24+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503144724",
+  "createDatetime": "20230503144724",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503144724",
+  "price": "50000",
+  "productId": 29,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503144724",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:47:24+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:47:24+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:51:13+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:51:13+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:51:13+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:51:13+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145113",
+  "createDatetime": "20230503145113",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145113",
+  "price": "45000",
+  "productId": 30,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145113",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:51:13+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:51:13+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503145113","_updateUserId":-1,"_version":0,"active":"N","datetime":"20230503145113","price":"50000","productId":30,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:51:13+07:00 level=debug msg=Rolled back transaction
+time=2023-05-03T14:56:12+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:56:12+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:56:12+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:56:12+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145612",
+  "createDatetime": "20230503145612",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145612",
+  "price": "45000",
+  "productId": 31,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145612",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:56:12+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:56:12+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503145612","_updateUserId":-1,"_version":0,"active":"N","datetime":"20230503145612","price":"50000","productId":31,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:56:12+07:00 level=debug msg=Rolled back transaction
+time=2023-05-03T14:57:24+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:57:24+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:57:24+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:57:24+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145724",
+  "createDatetime": "20230503145724",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145724",
+  "price": "45000",
+  "productId": 32,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145724",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:57:24+07:00 level=debug msg=QUERY edit product :  UPDATE learn_product SET  product_name = :productName , price = :price ,  update_datetime = :_updateDatetime,  update_user_id = :_updateUserId,  version = version + 1  WHERE product_id = :productId  AND version = :_version  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:57:24+07:00 level=debug msg=QUERY edit product : [args] {"_updateDatetime":"20230503145724","_updateUserId":-1,"_version":0,"active":"Y","datetime":"20230503145724","price":"50000","productId":32,"productName":"Sirup Marjan Edited","userId":-1,"version":0}
+time=2023-05-03T14:57:24+07:00 level=debug msg=EDITED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145724",
+  "createDatetime": "20230503145724",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145724",
+  "price": "50000",
+  "productId": 32,
+  "productName": "Sirup Marjan Edited",
+  "updateDatetime": "20230503145724",
+  "updateUserId": -1,
+  "version": 1
+}
+time=2023-05-03T14:57:24+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:57:24+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:58:18+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:58:18+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:58:18+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:58:18+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145818",
+  "createDatetime": "20230503145818",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145818",
+  "price": "45000",
+  "productId": 33,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145818",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:58:18+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T14:58:18+07:00 level=debug msg=QUERY remove product: [args] {"productId":33}
+time=2023-05-03T14:58:18+07:00 level=debug msg=REMOVEDPRODUCT product : {
+  "active": "Y",
+  "activeDatetime": "20230503145818",
+  "createDatetime": "20230503145818",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145818",
+  "price": "45000",
+  "productId": 33,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145818",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:58:18+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:58:18+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T14:58:32+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:58:32+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T14:58:32+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:58:32+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503145832",
+  "createDatetime": "20230503145832",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503145832",
+  "price": "45000",
+  "productId": 34,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503145832",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T14:58:32+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:58:32+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T15:00:08+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:00:08+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T15:00:08+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T15:00:08+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150008",
+  "createDatetime": "20230503150008",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150008",
+  "price": "45000",
+  "productId": 35,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150008",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:00:08+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T15:00:08+07:00 level=debug msg=QUERY remove product: [args] {"productId":35}
+time=2023-05-03T15:00:08+07:00 level=debug msg=REMOVED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150008",
+  "createDatetime": "20230503150008",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150008",
+  "price": "45000",
+  "productId": 35,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150008",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:00:08+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:00:08+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T15:00:54+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:00:54+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T15:00:54+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T15:00:54+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150054",
+  "createDatetime": "20230503150054",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150054",
+  "price": "45000",
+  "productId": 36,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150054",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:00:54+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T15:00:54+07:00 level=debug msg=QUERY remove product: [args] {"productId":36}
+time=2023-05-03T15:00:54+07:00 level=debug msg=REMOVED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150054",
+  "createDatetime": "20230503150054",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150054",
+  "price": "45000",
+  "productId": 36,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150054",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:00:54+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:00:54+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T15:02:28+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:02:28+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T15:02:28+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T15:02:28+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150228",
+  "createDatetime": "20230503150228",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150228",
+  "price": "45000",
+  "productId": 37,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150228",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:02:28+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T15:02:28+07:00 level=debug msg=QUERY remove product: [args] {"productId":37}
+time=2023-05-03T15:02:28+07:00 level=debug msg=REMOVED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150228",
+  "createDatetime": "20230503150228",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150228",
+  "price": "45000",
+  "productId": 37,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150228",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:02:28+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:02:28+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T15:04:59+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:04:59+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T15:05:00+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T15:05:00+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150500",
+  "createDatetime": "20230503150500",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150500",
+  "price": "45000",
+  "productId": 38,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150500",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:05:00+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T15:05:00+07:00 level=debug msg=QUERY remove product: [args] {"productId":38}
+time=2023-05-03T15:05:00+07:00 level=debug msg=REMOVED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150500",
+  "createDatetime": "20230503150500",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150500",
+  "price": "45000",
+  "productId": 38,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150500",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:05:00+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:05:00+07:00 level=debug msg=Transaction error, rolled back : success
+time=2023-05-03T15:06:33+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:06:33+07:00 level=debug msg=Connecting to database postgresql://sts:*****@172.17.0.1:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostgres
+time=2023-05-03T15:06:33+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T15:06:33+07:00 level=debug msg=ADDED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150633",
+  "createDatetime": "20230503150633",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150633",
+  "price": "45000",
+  "productId": 39,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150633",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:06:33+07:00 level=debug msg=QUERY remove product:  DELETE FROM learn_product WHERE product_id = :productId  RETURNING    product_id, product_name, price,    active, active_datetime, non_active_datetime, create_datetime,    update_datetime, create_user_id, update_user_id, version 
+time=2023-05-03T15:06:33+07:00 level=debug msg=QUERY remove product: [args] {"productId":39}
+time=2023-05-03T15:06:33+07:00 level=debug msg=REMOVED product : {
+  "active": "Y",
+  "activeDatetime": "20230503150633",
+  "createDatetime": "20230503150633",
+  "createUserId": -1,
+  "nonActiveDatetime": "20230503150633",
+  "price": "45000",
+  "productId": 39,
+  "productName": "Sirup Marjan",
+  "updateDatetime": "20230503150633",
+  "updateUserId": -1,
+  "version": 0
+}
+time=2023-05-03T15:06:33+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T15:06:33+07:00 level=debug msg=Transaction error, rolled back : success
