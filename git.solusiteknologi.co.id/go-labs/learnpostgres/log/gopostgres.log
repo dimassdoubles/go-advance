@@ -1,0 +1,99 @@
+time=2023-05-03T13:25:43+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T13:25:43+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5432/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostegres
+time=2023-05-03T13:25:43+07:00 level=fatal msg=Database connection error
+time=2023-05-03T13:26:40+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T13:26:40+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostegres
+time=2023-05-03T13:26:40+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T13:26:40+07:00 level=debug msg=QUERY count product : SELECT COUNT(1) FROM learn_product
+time=2023-05-03T13:26:40+07:00 level=debug msg=QUERY count product : [args] null
+time=2023-05-03T13:26:40+07:00 level=debug msg=Result count product : 5
+time=2023-05-03T13:38:34+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T13:38:34+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostegres
+time=2023-05-03T13:38:34+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T13:38:34+07:00 level=debug msg=QUERY count product : SELECT COUNT(1) FROM learn_product
+time=2023-05-03T13:38:34+07:00 level=debug msg=QUERY count product : [args] null
+time=2023-05-03T13:38:34+07:00 level=debug msg=Result count product : 5
+time=2023-05-03T13:38:34+07:00 level=debug msg=QUERY getProduct:  SELECT A.product_id, A.product_name, A.price,    A.active, A.active_datetime, A.non_active_datetime, A.create_datetime,    A.update_datetime, A.create_user_id, A.update_user_id, A.version   FROM learn_product A  WHERE true  AND  ( A.product_name ILIKE :keyword  )  AND A.active = :active  ORDER BY A.product_name ASC  LIMIT :limit OFFSET :offset 
+time=2023-05-03T13:38:34+07:00 level=debug msg=QUERY getProduct: [args] {"active":"Y","keyword":"%kecap%","limit":100,"offset":0}
+time=2023-05-03T13:38:34+07:00 level=debug msg=Result products : {
+  "productList": [
+    {
+      "productId": 1,
+      "productName": "Kecap ABC",
+      "price": "23000",
+      "active": "Y",
+      "activeDatetime": "20230502155510",
+      "nonActiveDatetime": "",
+      "createDatetime": "20230502155510",
+      "updateDatetime": "20230502155510",
+      "createUserId": -1,
+      "updateUserId": -1,
+      "version": 0
+    }
+  ]
+}
+time=2023-05-03T13:49:17+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T13:49:17+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostegres
+time=2023-05-03T13:49:17+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T13:49:17+07:00 level=debug msg=QUERY count product : SELECT COUNT(1) FROM learn_product
+time=2023-05-03T13:49:17+07:00 level=debug msg=QUERY count product : [args] null
+time=2023-05-03T13:49:17+07:00 level=debug msg=Result count product : 5
+time=2023-05-03T13:49:17+07:00 level=debug msg=QUERY getProduct:  SELECT A.product_id, A.product_name, A.price,    A.active, A.active_datetime, A.non_active_datetime, A.create_datetime,    A.update_datetime, A.create_user_id, A.update_user_id, A.version   FROM learn_product A  WHERE true  AND  ( A.product_name ILIKE :keyword  )  AND A.active = :active  ORDER BY A.product_name ASC  LIMIT :limit OFFSET :offset 
+time=2023-05-03T13:49:17+07:00 level=debug msg=QUERY getProduct: [args] {"active":"Y","keyword":"%kecap%","limit":100,"offset":0}
+time=2023-05-03T13:49:17+07:00 level=debug msg=Result products : {
+  "productList": [
+    {
+      "productId": 1,
+      "productName": "Kecap ABC",
+      "price": "23000",
+      "active": "Y",
+      "activeDatetime": "20230502155510",
+      "nonActiveDatetime": "",
+      "createDatetime": "20230502155510",
+      "updateDatetime": "20230502155510",
+      "createUserId": -1,
+      "updateUserId": -1,
+      "version": 0
+    }
+  ]
+}
+time=2023-05-03T14:02:40+07:00 level=debug msg=Init log successfully setup
+time=2023-05-03T14:02:40+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:14555/gopostgresdb?pool_max_conns=1&pool_min_conns=1&application_name=LearnGoPostegres
+time=2023-05-03T14:02:40+07:00 level=info msg=Starting pool with max connection  1
+time=2023-05-03T14:02:40+07:00 level=debug msg=QUERY count product : SELECT COUNT(1) FROM learn_product
+time=2023-05-03T14:02:40+07:00 level=debug msg=QUERY count product : [args] null
+time=2023-05-03T14:02:40+07:00 level=debug msg=Result count product : 5
+time=2023-05-03T14:02:40+07:00 level=debug msg=QUERY getProduct:  SELECT A.product_id, A.product_name, A.price,    A.active, A.active_datetime, A.non_active_datetime, A.create_datetime,    A.update_datetime, A.create_user_id, A.update_user_id, A.version   FROM learn_product A  WHERE true  AND  ( A.product_name ILIKE :keyword  )  AND A.active = :active  ORDER BY A.product_name ASC  LIMIT :limit OFFSET :offset 
+time=2023-05-03T14:02:40+07:00 level=debug msg=QUERY getProduct: [args] {"active":"Y","keyword":"%kecap%","limit":100,"offset":0}
+time=2023-05-03T14:02:40+07:00 level=debug msg=Result products : {
+  "productList": [
+    {
+      "productId": 1,
+      "productName": "Kecap ABC",
+      "price": "23000",
+      "active": "Y",
+      "activeDatetime": "20230502155510",
+      "nonActiveDatetime": "",
+      "createDatetime": "20230502155510",
+      "updateDatetime": "20230502155510",
+      "createUserId": -1,
+      "updateUserId": -1,
+      "version": 0
+    }
+  ]
+}
+time=2023-05-03T14:02:40+07:00 level=debug msg=Result products : {
+  "learnProduct": {
+    "productId": 9,
+    "productName": "Kopi Kapal Api",
+    "price": "2500.01",
+    "active": "Y",
+    "activeDatetime": "sekarang",
+    "nonActiveDatetime": "sekarang",
+    "createDatetime": "sekarang",
+    "updateDatetime": "sekarang",
+    "createUserId": 52,
+    "updateUserId": 52,
+    "version": 0
+  }
+}
